@@ -1,0 +1,13 @@
+Quanto mais eu passo fazendo a logica dessa atividade mais eu quebro a cabeça 
+Requisitos do banco de dados da desgraça:
+- Criar um formulário para o cadastro de novos alunos no sistema, garantindo a unicidade do CPF e o preenchimento correto de todos os campos.(ID,Nome,Data_nascimento,CPF,Endereço,telefone).
+- Fazer o mesmo formulário do aluno so que com professores agora
+- Criar tabela cursos com ID, nome, descrição e creditos totais
+- Criar tabela de Disciplina com o ID, nome, ID_Curso(relacionamento de 1:N), creditos
+- Criar tabela de matricula com o ID, ID_Aluno(Um para muitos), ID_Disciplina, Data matricula
+- Criar tabela de Aulas com o ID, ID_Disciplina, ID_Professor, Data, Horário
+Logica: Alunos para matriculas: 1 ALuno pode estar matriculado em várias disciplinas, e cada matricula é associada a um aluno específico
+Disciplinas: UMa disciplina pode ter varios alunos matriculados e cada matricula está vinculada a uma disciplina especifica
+Disciplina: UMa disciplina pode ter varias aulas e cada aula está associada a uma disciplina especifica
+Professor: UM professor pode dar varias aulas e cada aula é ministrada por um unico professor
+Curso Para disciplinas: Um curso pode ter varias disciplinas e cada disciplina está vinculada a um curso especifico
